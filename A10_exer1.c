@@ -3,7 +3,6 @@
 int main () {
     char nome[100];
     char disciplina[100];
-    float soma;
     float media;
 
     printf("Digite um nome: ");
@@ -19,10 +18,8 @@ int main () {
         scanf("%f", &notas[i]);
     }
 
-    soma = notas[0]+notas[1]+notas[2];
+    media = (notas[0]+notas[1]+notas[2]/3);
 
-    media = soma/3;
-
-    printf("%s, obteve %1.f pontos na media da disciplina %s.", nome,media,disciplina);
+    printf("%s, obteve %.1f pontos na media da disciplina %s.", nome,media,disciplina);
     return 0;
 }
